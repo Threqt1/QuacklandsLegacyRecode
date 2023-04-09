@@ -1,2 +1,9 @@
-.idea
+.*
+!.gitignore
+.class
+
 QuacklandsLegacyRecode.iml
+
+target
+pom.xml
+replit.nix
