@@ -1,6 +1,6 @@
 .*
 !.gitignore
-.class
+*.class
 
 QuacklandsLegacyRecode.iml
 
