@@ -1,5 +1,8 @@
+import engine.Engine;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hi");
+        Engine engine = new Engine();
+        engine.start();
     }
 }
