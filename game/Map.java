@@ -20,6 +20,10 @@ public class Map {
         return isInBounds(position) && mapTileData[position.getY()][position.getX()].canWalkOn();
     }
 
+    public ParsedMapTile getTileInfo(Vector2 position) {
+        return mapTileData[position.getY()][position.getX()];
+    }
+
     public boolean isInBounds(Vector2 position) {
         return position.getY() >= 0 && position.getY() < mapTileData.length && position.getX() >= 0 && position.getX() < mapTileData[0].length;
     }

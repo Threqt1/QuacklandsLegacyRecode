@@ -1,8 +1,10 @@
-package render;
+package render.game;
 
 import engine.Engine;
 import engine.math.Vector2;
 import game.Game;
+import render.FullRenderable;
+import render.PartialRenderable;
 
 import java.util.ArrayList;
 import java.util.HashMap;

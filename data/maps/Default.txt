@@ -1,0 +1,14 @@
+XXXXXX
+X    X
+X    X
+X    X
+X    X
+XXXXXX
+
+X 255;255;255
+
+
+X
+
+
+1,1

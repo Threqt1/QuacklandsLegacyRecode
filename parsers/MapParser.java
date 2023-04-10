@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class MapParser {
-    static File DEFAULT_MAP = new File("data/maps/test.txt");
+    static File DEFAULT_MAP = new File("data/maps/Default.txt");
     public static ParsedMap parseMapFile(String id) {
         File mapFile = new File("data/maps/" + id + ".txt");
         if (!mapFile.exists()) mapFile = DEFAULT_MAP;
@@ -66,8 +66,8 @@ public class MapParser {
                         character = Character.toString(row.charAt(x));
                     }
                     String color = ASCII.DEFAULT_COLOR;
-                    color = specificColorMap.getOrDefault(x + "," + y, color);
                     color = broadColorMap.getOrDefault(character, color);
+                    color = specificColorMap.getOrDefault(x + "," + y, color);
                     visualMapTiles[y][x] = ASCII.colorize(character, color);
                     parsedMapTiles[y][x] = new ParsedMapTile(!barriers.containsKey(character), false, null);
                 }

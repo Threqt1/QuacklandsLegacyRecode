@@ -1,4 +1,6 @@
-package render;
+package render.game;
+
+import render.PartialRenderable;
 
 public class RenderableTile implements PartialRenderable {
     private final String tile;

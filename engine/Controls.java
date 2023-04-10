@@ -5,4 +5,5 @@ public class Controls {
     public static final String MOVE_LEFT = "A";
     public static final String MOVE_RIGHT = "D";
     public static final String MOVE_DOWN = "S";
+    public static final String INTERACT = "E";
 }
